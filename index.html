@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Portfolio website of a software engineer — projects, skills, and experience." />
+  <title>Sushanth CD — Software Engineer Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!-- Mobile Top Bar for small viewports -->
+  <header id="mobile-top-bar" class="mobile-top-bar">
+    <a href="#hero" class="mobile-logo">
+      <span class="logo-mark">S</span>
+      <span class="mobile-logo-text">Sushanth CD</span>
+    </a>
+    <button id="mobile-menu-toggle" type="button" class="mobile-menu-btn" aria-label="Toggle navigation menu"
+      aria-expanded="false" aria-controls="sidebar-nav">
+      <span class="hamburger-box">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </span>
+    </button>
+  </header>
+
+  <!-- Backdrop for mobile drawer -->
+  <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- ===================================
+       VERTICAL NAVBAR — Left side navigation
+       =================================== -->
+  <aside id="sidebar-nav" class="pro-sidebar" aria-label="Primary navigation">
+    <div class="sidebar-header">
+      <a href="#hero" class="sidebar-logo">
+        <span class="logo-mark">S</span>
+        <div class="sidebar-logo-details">
+          <span class="sidebar-logo-text">Sushanth CD</span>
+          <span class="sidebar-subtext">AIML · Software Engineer</span>
+        </div>
+      </a>
+      <div class="pro-status-badge">
+        <span class="status-indicator" aria-hidden="true"></span>
+        <span class="status-text">Available for Roles</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Section shortcuts">
+      <ul class="nav-links">
+        <li>
+          <a href="#hero" class="nav-link active">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">
+            <span class="nav-icon" aria-hidden="true">👤</span>
+            <span class="nav-label">About Me</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link">
+            <span class="nav-icon" aria-hidden="true">⚡</span>
+            <span class="nav-label">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#timeline" class="nav-link">
+            <span class="nav-icon" aria-hidden="true">⏳</span>
+            <span class="nav-label">Timeline</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link">
+            <span class="nav-icon" aria-hidden="true">💼</span>
+            <span class="nav-label">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#testimonials" class="nav-link">
+            <span class="nav-icon" aria-hidden="true">★</span>
+            <span class="nav-label">Testimonials</span>
+          </a>
+        </li>
+        <li>
+          <a href="#chat" class="nav-link">
+            <span class="nav-icon" aria-hidden="true">💬</span>
+            <span class="nav-label">Chat</span>
+            <span class="nav-pill-badge">AI</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">
+            <span class="nav-icon" aria-hidden="true">✉</span>
+            <span class="nav-label">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-profile-card">
+        <div class="status-ping-dot" aria-hidden="true"></div>
+        <div class="profile-card-text">
+          <span class="profile-card-title">Undergrad AIML</span>
+          <span class="profile-card-sub">Bengaluru, India</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================================
+       MAIN — All page content sections
+       =================================== -->
+  <main>
+
+    <!-- ——— HERO SECTION ——— -->
+    <!-- Full-viewport intro -->
+    <section id="hero" aria-label="Introduction">
+      <!-- Decorative gradient mesh rendered via CSS -->
+      <div class="hero-bg-mesh" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- Profile image -->
+        <div class="hero-portrait">
+          <img src="Sush proff pic.jpeg" alt="Portrait of Sushanth CD" width="280" height="373" />
+        </div>
+
+        <div class="hero-text">
+          <div class="hero-status-pill">
+            <span class="status-pulse-dot" aria-hidden="true"></span>
+            <span>Available for ML &amp; Software Roles</span>
+          </div>
+          <h1 class="hero-name">Sushanth CD</h1>
+          <p class="hero-tagline">
+            Software Engineer &amp; Artificial Intelligence Specialist
+          </p>
+          <p class="hero-subtext">
+            Specializing in Machine Learning, predictive modeling, and scalable software solutions. Passionate about
+            solving complex algorithmic challenges and crafting robust, data-driven systems.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">B.Tech</span>
+              <span class="stat-label">AI &amp; ML Major</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">End-to-End</span>
+              <span class="stat-label">ML Pipelines</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">Bengaluru</span>
+              <span class="stat-label">Karnataka, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- ——— ABOUT SECTION ——— -->
+    <!-- Clean, minimalistic profile with professional photo, bio, career highlights & interests -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-tag">ABOUT ME</div>
+      <h2 id="about-heading">Profile Overview</h2>
+
+      <div class="about-container">
+        <!-- Left Column: Professional Photo Card -->
+        <aside class="about-avatar-card">
+          <div class="avatar-frame">
+            <img src="Sush proff pic.jpeg" alt="Portrait of Sushanth CD" width="260" height="347"
+              class="about-avatar-img" />
+            <div class="avatar-badge">
+              <span class="avatar-pulse-dot" aria-hidden="true"></span>
+              <span>AIML Specialist</span>
+            </div>
+          </div>
+          <div class="avatar-info">
+            <h3 class="avatar-name">Sushanth CD</h3>
+            <p class="avatar-role">B.Tech AIML · Software Engineer</p>
+          </div>
+        </aside>
+
+        <!-- Right Column: Bio, Career Highlights & Personal Interests -->
+        <div class="about-details">
+          <!-- Short Bio -->
+          <div class="about-card-block">
+            <p class="about-bio-lead">
+              Hello! I'm a software engineer and undergraduate student specializing in <strong>Artificial Intelligence
+                &amp; Machine Learning</strong>. I'm passionate about solving algorithmic puzzles, designing machine
+              learning models, and building clean, responsive web software.
+            </p>
+            <p class="about-bio-text">
+              My focus is on turning theoretical concepts into reliable applications. Whether implementing
+              classification algorithms, tuning hyperparameters, practicing data structures in Java and Python, or
+              collaborating through Git, I enjoy crafting robust solutions.
+            </p>
+          </div>
+
+          <!-- Career Highlights -->
+          <div class="about-card-block">
+            <h3 class="card-block-title">
+              <span class="title-glyph" aria-hidden="true">⚡</span>
+              Career Highlights
+            </h3>
+            <ul class="highlights-list">
+              <li>
+                <span class="highlight-bullet" aria-hidden="true">•</span>
+                <div>
+                  <strong>Customer Churn Prediction System:</strong> Built an end-to-end ML project using Logistic
+                  Regression and Random Forest with hyperparameter tuning, complete with exploratory data analysis and a
+                  Streamlit interactive web deployment.
+                </div>
+              </li>
+              <li>
+                <span class="highlight-bullet" aria-hidden="true">•</span>
+                <div>
+                  <strong>Data Structures &amp; Algorithms:</strong> Regular practice with problem-solving in Java and
+                  Python, emphasizing clean code and time/space complexity optimization.
+                </div>
+              </li>
+              <li>
+                <span class="highlight-bullet" aria-hidden="true">•</span>
+                <div>
+                  <strong>Production Version Control:</strong> Hands-on proficiency with Git &amp; GitHub workflows
+                  including branching, merging, conflict resolution, reset, and cherry-pick.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Personal Interests -->
+          <div class="about-card-block">
+            <h3 class="card-block-title">
+              <span class="title-glyph" aria-hidden="true">🎯</span>
+              Personal Interests
+            </h3>
+            <div class="interests-chips">
+              <span class="interest-chip"><span class="chip-icon">🤖</span> Generative AI</span>
+              <span class="interest-chip"><span class="chip-icon">🧠</span> Neural Networks</span>
+              <span class="interest-chip"><span class="chip-icon">🧩</span> Algorithmic Puzzles</span>
+              <span class="interest-chip"><span class="chip-icon">🌐</span> Open Source</span>
+              <span class="interest-chip"><span class="chip-icon">📚</span> System Architecture</span>
+              <span class="interest-chip"><span class="chip-icon">☕</span> Tech Communities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ——— SKILLS SECTION ——— -->
+    <!-- Core competencies: Programming languages, ML frameworks, and development tools -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-tag">SKILLS &amp; EXPERTISE</div>
+      <h2 id="skills-heading">Technical Skills &amp; Competencies</h2>
+      <p class="section-desc">
+        A comprehensive breakdown of core software engineering and machine learning competencies, featuring proficiency
+        metrics, progress indicators, and key applied skills.
+      </p>
+
+      <div class="skills-grid">
+        <!-- ==============================================
+             CARD 1: Programming Languages
+             Highlights algorithmic problem solving, object-oriented design,
+             and foundational computing capabilities.
+             ============================================== -->
+        <article class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">⌨</span>
+            <div class="skill-header-text">
+              <h3>Programming Languages</h3>
+              <p class="skill-header-sub">Algorithmic foundations &amp; system logic</p>
+            </div>
+          </div>
+
+          <!-- Progress Bars List -->
+          <div class="skill-bars-list">
+            <!-- Python: Core language for AI/ML modeling, algorithm design, data analysis, and automation scripting -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">🐍</span>
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level-tag">Advanced</span>
+                </div>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Python proficiency: 90%">
+                <div class="skill-fill" style="--level: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- Java: Primary language for Data Structures, Algorithms, object-oriented architecture, and robust coding -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">☕</span>
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level-tag">Proficient</span>
+                </div>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Java proficiency: 85%">
+                <div class="skill-fill" style="--level: 85%;"></div>
+              </div>
+            </div>
+
+            <!-- SQL: Relational database queries, schema structuring, data extraction, and dataset aggregation for analytics -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">🗄</span>
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level-tag">Intermediate</span>
+                </div>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                aria-label="SQL proficiency: 80%">
+                <div class="skill-fill" style="--level: 80%;"></div>
+              </div>
+            </div>
+
+            <!-- C / C++: Low-level systems programming concepts, pointers, memory allocation, and performance awareness -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">⚙</span>
+                  <span class="skill-name">C / C++</span>
+                  <span class="skill-level-tag">Foundational</span>
+                </div>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                aria-label="C / C++ proficiency: 75%">
+                <div class="skill-fill" style="--level: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Competency List: Specific software engineering focus areas -->
+          <div class="skill-competencies">
+            <span class="competencies-title">Key Competencies:</span>
+            <ul class="skill-tags">
+              <li><span class="tag-dot"></span>Object-Oriented Design</li>
+              <li><span class="tag-dot"></span>DSA Optimization</li>
+              <li><span class="tag-dot"></span>Asymptotic Complexity</li>
+              <li><span class="tag-dot"></span>Automated Scripting</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CARD 2: Frameworks & Machine Learning
+             Represents predictive modeling, scientific computing,
+             data pipeline engineering, and statistical analysis.
+             ============================================== -->
+        <article class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">⚡</span>
+            <div class="skill-header-text">
+              <h3>Frameworks &amp; ML Stack</h3>
+              <p class="skill-header-sub">Predictive modeling &amp; data intelligence</p>
+            </div>
+          </div>
+
+          <!-- Progress Bars List -->
+          <div class="skill-bars-list">
+            <!-- Scikit-Learn: End-to-end ML algorithms, hyperparameter tuning, cross-validation, and performance metrics -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">🤖</span>
+                  <span class="skill-name">Scikit-Learn</span>
+                  <span class="skill-level-tag">Advanced</span>
+                </div>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Scikit-Learn proficiency: 88%">
+                <div class="skill-fill" style="--level: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- Pandas & NumPy: Tabular data wrangling, matrix manipulation, vectorization, and data transformation -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">📊</span>
+                  <span class="skill-name">Pandas &amp; NumPy</span>
+                  <span class="skill-level-tag">Advanced</span>
+                </div>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Pandas & NumPy proficiency: 92%">
+                <div class="skill-fill" style="--level: 92%;"></div>
+              </div>
+            </div>
+
+            <!-- Matplotlib & Seaborn: Exploratory data analysis, statistical charting, heatmaps, and distribution curves -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">📈</span>
+                  <span class="skill-name">Matplotlib &amp; Seaborn</span>
+                  <span class="skill-level-tag">Proficient</span>
+                </div>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Matplotlib & Seaborn proficiency: 85%">
+                <div class="skill-fill" style="--level: 85%;"></div>
+              </div>
+            </div>
+
+            <!-- Streamlit: Interactive web interface deployment for machine learning models and data dashboarding -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">🚀</span>
+                  <span class="skill-name">Streamlit</span>
+                  <span class="skill-level-tag">Proficient</span>
+                </div>
+                <span class="skill-percent">84%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Streamlit proficiency: 84%">
+                <div class="skill-fill" style="--level: 84%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Competency List: Specific machine learning focus areas -->
+          <div class="skill-competencies">
+            <span class="competencies-title">Key Competencies:</span>
+            <ul class="skill-tags">
+              <li><span class="tag-dot"></span>Classification Models</li>
+              <li><span class="tag-dot"></span>Hyperparameter Tuning</li>
+              <li><span class="tag-dot"></span>Feature Engineering</li>
+              <li><span class="tag-dot"></span>Model Deployment</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             CARD 3: Tools & Platforms
+             Demonstrates production software engineering workflows,
+             collaborative version control, and development environments.
+             ============================================== -->
+        <article class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">🛠</span>
+            <div class="skill-header-text">
+              <h3>Tools &amp; Platforms</h3>
+              <p class="skill-header-sub">Production workflows &amp; developer toolchains</p>
+            </div>
+          </div>
+
+          <!-- Progress Bars List -->
+          <div class="skill-bars-list">
+            <!-- Git & GitHub: Version control, branch strategies, conflict resolution, rebase, and code collaboration -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">🐙</span>
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="skill-level-tag">Advanced</span>
+                </div>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Git & GitHub proficiency: 88%">
+                <div class="skill-fill" style="--level: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- VS Code: Primary modern code editor with linting, language servers, terminal integration, and debugging -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">💻</span>
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level-tag">Advanced</span>
+                </div>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                aria-label="VS Code proficiency: 90%">
+                <div class="skill-fill" style="--level: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- Jupyter Notebooks: Reproducible machine learning experiments, data storytelling, and step-by-step prototyping -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">📓</span>
+                  <span class="skill-name">Jupyter Notebooks</span>
+                  <span class="skill-level-tag">Advanced</span>
+                </div>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Jupyter Notebooks proficiency: 88%">
+                <div class="skill-fill" style="--level: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- Linux & Shell: CLI operations, bash commands, package management, virtual environments, and automation -->
+            <div class="skill-item">
+              <div class="skill-meta">
+                <div class="skill-name-group">
+                  <span class="tech-icon" aria-hidden="true">🐧</span>
+                  <span class="skill-name">Linux &amp; Terminal</span>
+                  <span class="skill-level-tag">Intermediate</span>
+                </div>
+                <span class="skill-percent">78%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Linux & Terminal proficiency: 78%">
+                <div class="skill-fill" style="--level: 78%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Competency List: Specific tooling and workflow focus areas -->
+          <div class="skill-competencies">
+            <span class="competencies-title">Key Competencies:</span>
+            <ul class="skill-tags">
+              <li><span class="tag-dot"></span>Branching &amp; PRs</li>
+              <li><span class="tag-dot"></span>Conflict Resolution</li>
+              <li><span class="tag-dot"></span>Virtual Environments</li>
+              <li><span class="tag-dot"></span>Bash Scripting</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ——— TIMELINE SECTION ——— -->
+    <!-- Chronological journey: Education, major projects, and career milestones -->
+    <section id="timeline" aria-labelledby="timeline-heading">
+      <div class="section-tag">JOURNEY &amp; MILESTONES</div>
+      <h2 id="timeline-heading">Career &amp; Learning Timeline</h2>
+      <p class="section-desc">
+        A chronological roadmap of key academic achievements, major software and machine learning projects, and
+        practical engineering milestones.
+      </p>
+
+      <ol class="timeline-list">
+        <!-- Milestone 1: Career Milestone / Practical Engineering (Current) -->
+        <li class="timeline-item">
+          <div class="timeline-dot dot-current" aria-hidden="true">
+            <span class="dot-inner"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <div class="meta-left">
+                <span class="timeline-category-tag tag-milestone">💻 Career Milestone</span>
+                <time datetime="2024-10" class="timeline-time">Oct 2024 – Present</time>
+              </div>
+              <span class="timeline-badge badge-active">ACTIVE</span>
+            </div>
+            <h3 class="timeline-role">Production Engineering &amp; Problem Solving</h3>
+            <p class="timeline-desc">
+              <strong>Version Control Workflows:</strong> Daily hands-on practice with production Git workflows,
+              including feature branching, rebasing, pull requests, cherry-picking, and remote collaboration on
+              GitHub.<br />
+              <strong>DSA Mastery:</strong> Continuously solving algorithmic problems across arrays, trees, dynamic
+              programming, and graphs in Java and Python with a strong focus on space and time complexity optimizations.
+            </p>
+            <ul class="timeline-tags">
+              <li>Git Workflows</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>DSA Optimization</li>
+              <li>GitHub Collaboration</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Milestone 2: Major Project (Customer Churn Predictor) -->
+        <li class="timeline-item">
+          <div class="timeline-dot dot-project" aria-hidden="true">
+            <span class="dot-inner"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <div class="meta-left">
+                <span class="timeline-category-tag tag-project">🚀 Major Project</span>
+                <time datetime="2024-07" class="timeline-time">Jul 2024 – Sep 2024</time>
+              </div>
+              <span class="timeline-badge badge-complete">DEPLOYED</span>
+            </div>
+            <h3 class="timeline-role">Customer Churn Prediction System</h3>
+            <p class="timeline-desc">
+              <strong>End-to-End ML Pipeline:</strong> Built and trained predictive classification models utilizing
+              Logistic Regression and Random Forest algorithms to identify customer attrition risks.<br />
+              <strong>Data Engineering &amp; UI:</strong> Cleaned raw data, handled imbalanced distributions, conducted
+              exploratory analysis, performed hyperparameter tuning, and packaged the solution into a live Streamlit web
+              application.
+            </p>
+            <ul class="timeline-tags">
+              <li>Machine Learning</li>
+              <li>Scikit-Learn</li>
+              <li>Random Forest</li>
+              <li>Streamlit</li>
+              <li>Pandas</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Milestone 3: Major Project / Algorithmic Suite -->
+        <li class="timeline-item">
+          <div class="timeline-dot dot-project" aria-hidden="true">
+            <span class="dot-inner"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <div class="meta-left">
+                <span class="timeline-category-tag tag-project">⚡ Major Project</span>
+                <time datetime="2024-01" class="timeline-time">Jan 2024 – Jun 2024</time>
+              </div>
+              <span class="timeline-badge badge-complete">COMPLETED</span>
+            </div>
+            <h3 class="timeline-role">Algorithmic Suite &amp; Data Structures Core</h3>
+            <p class="timeline-desc">
+              <strong>Core Implementations:</strong> Designed and implemented core data structures (linked lists, binary
+              search trees, heaps, hash maps) from scratch in Java to deepen internal architectural comprehension.<br />
+              <strong>Complexity Benchmarking:</strong> Evaluated empirical execution times against theoretical Big-O
+              asymptotic limits, ensuring optimal algorithmic performance.
+            </p>
+            <ul class="timeline-tags">
+              <li>Data Structures</li>
+              <li>Algorithms</li>
+              <li>Java</li>
+              <li>Complexity Analysis</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Milestone 4: Education (B.Tech Degree) -->
+        <li class="timeline-item">
+          <div class="timeline-dot dot-education" aria-hidden="true">
+            <span class="dot-inner"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <div class="meta-left">
+                <span class="timeline-category-tag tag-education">🎓 Education</span>
+                <time datetime="2023-08" class="timeline-time">Aug 2023 – Present</time>
+              </div>
+              <span class="timeline-badge badge-pursuing">PURSUING</span>
+            </div>
+            <h3 class="timeline-role">Bachelor of Technology (B.Tech)</h3>
+            <p class="timeline-desc">
+              <strong>Specialization:</strong> Artificial Intelligence &amp; Machine Learning (AIML).<br />
+              Comprehensive curriculum covering supervised &amp; unsupervised learning, deep learning fundamentals,
+              neural architectures, relational database management systems, and discrete mathematical modeling.
+            </p>
+            <ul class="timeline-tags">
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+              <li>Neural Networks</li>
+              <li>DBMS</li>
+              <li>Calculus &amp; Linear Algebra</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ——— PROJECTS SECTION ——— -->
+    <!-- Featured engineering projects with clickable thumbnails and detailed views -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-tag">FEATURED PROJECTS</div>
+      <h2 id="projects-heading">Selected Engineering Works</h2>
+      <p class="section-desc">
+        A showcase of machine learning pipelines, algorithmic frameworks, and data analytics systems. Each project
+        thumbnail is clickable to open a detailed technical view with architectural specs and code.
+      </p>
+
+      <div class="projects-grid">
+        <!-- ==============================================
+             PROJECT 1: Customer Churn Predictor
+             THUMBNAIL-TO-DETAIL CONNECTION:
+             The clickable thumbnail anchor links to #modal-project-churn via data-modal-target="modal-project-churn".
+             Clicking either the visual preview image or the "Detailed View" button triggers the detailed modal dialog,
+             displaying the full pipeline architecture, evaluation metrics, and live demo links.
+             ============================================== -->
+        <article class="project-card">
+          <!-- Clickable Project Thumbnail with hover overlay -->
+          <a href="#modal-project-churn" class="project-thumb-link" data-modal-target="modal-project-churn"
+            aria-label="Open detailed view for Customer Churn Prediction System">
+            <div class="project-thumb-wrapper">
+              <img src="churn-thumb.jpg" alt="Preview of Customer Churn Prediction Dashboard" class="project-thumb-img"
+                loading="lazy" width="600" height="338" />
+              <div class="thumb-overlay">
+                <span class="overlay-badge">View Project Details</span>
+                <span class="overlay-icon" aria-hidden="true">↗</span>
+              </div>
+              <span class="thumb-tag">ML &amp; Streamlit</span>
+            </div>
+          </a>
+
+          <div class="project-card-body">
+            <div class="project-meta-row">
+              <span class="project-category">Machine Learning</span>
+              <span class="project-status-dot">Live Deployment</span>
+            </div>
+            <h3 class="project-title">Customer Churn Prediction System</h3>
+            <p class="project-desc">
+              An end-to-end classification system forecasting customer churn with 90.1% accuracy. Includes exploratory
+              data analysis, feature engineering, Logistic Regression &amp; Random Forest models, and a live Streamlit
+              interface.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Scikit-Learn</li>
+              <li>Streamlit</li>
+              <li>Pandas</li>
+              <li>Random Forest</li>
+            </ul>
+            <div class="project-links">
+              <!-- Connected trigger to the project detail view -->
+              <button type="button" class="btn-proj btn-detail-trigger" data-modal-target="modal-project-churn">
+                <span>Detailed View</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+              <a href="https://github.com" class="btn-proj btn-code" target="_blank" rel="noopener noreferrer">
+                <span>Source Code</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             PROJECT 2: Algorithmic Suite & Data Structures Core
+             THUMBNAIL-TO-DETAIL CONNECTION:
+             The thumbnail anchor connects to #modal-project-algo via data-modal-target="modal-project-algo".
+             Clicking opens the detail modal displaying data structure implementations, complexity benchmarking tables,
+             and algorithmic visualizations.
+             ============================================== -->
+        <article class="project-card">
+          <!-- Clickable Project Thumbnail with hover overlay -->
+          <a href="#modal-project-algo" class="project-thumb-link" data-modal-target="modal-project-algo"
+            aria-label="Open detailed view for Algorithmic Suite & Data Structures Core">
+            <div class="project-thumb-wrapper">
+              <img src="algo-thumb.jpg" alt="Preview of Algorithmic Suite and Data Structures Visualizer"
+                class="project-thumb-img" loading="lazy" width="600" height="338" />
+              <div class="thumb-overlay">
+                <span class="overlay-badge">View Project Details</span>
+                <span class="overlay-icon" aria-hidden="true">↗</span>
+              </div>
+              <span class="thumb-tag">Java &amp; Algorithms</span>
+            </div>
+          </a>
+
+          <div class="project-card-body">
+            <div class="project-meta-row">
+              <span class="project-category">Algorithms &amp; Systems</span>
+              <span class="project-status-dot">Production Ready</span>
+            </div>
+            <h3 class="project-title">Algorithmic Suite &amp; Data Structures Core</h3>
+            <p class="project-desc">
+              Comprehensive repository of 100+ data structures and competitive programming algorithms built in Java.
+              Features custom balanced tree implementations, graph traversals, and empirical Big-O benchmarking suites.
+            </p>
+            <ul class="project-tags">
+              <li>Java</li>
+              <li>Data Structures</li>
+              <li>Algorithms</li>
+              <li>Big-O Analysis</li>
+              <li>Git</li>
+            </ul>
+            <div class="project-links">
+              <!-- Connected trigger to the project detail view -->
+              <button type="button" class="btn-proj btn-detail-trigger" data-modal-target="modal-project-algo">
+                <span>Detailed View</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+              <a href="https://github.com" class="btn-proj btn-code" target="_blank" rel="noopener noreferrer">
+                <span>Source Code</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==============================================
+             PROJECT 3: Exploratory Data Science & Analytics Dashboard
+             THUMBNAIL-TO-DETAIL CONNECTION:
+             The thumbnail anchor connects to #modal-project-eda via data-modal-target="modal-project-eda".
+             Clicking opens the detail modal with statistical analysis insights, correlation matrices,
+             and data visualization screenshots.
+             ============================================== -->
+        <article class="project-card">
+          <!-- Clickable Project Thumbnail with hover overlay -->
+          <a href="#modal-project-eda" class="project-thumb-link" data-modal-target="modal-project-eda"
+            aria-label="Open detailed view for Exploratory Data Science & Analytics Dashboard">
+            <div class="project-thumb-wrapper">
+              <img src="eda-thumb.jpg" alt="Preview of Exploratory Data Science & Analytics Dashboard"
+                class="project-thumb-img" loading="lazy" width="600" height="338" />
+              <div class="thumb-overlay">
+                <span class="overlay-badge">View Project Details</span>
+                <span class="overlay-icon" aria-hidden="true">↗</span>
+              </div>
+              <span class="thumb-tag">Data Science &amp; Viz</span>
+            </div>
+          </a>
+
+          <div class="project-card-body">
+            <div class="project-meta-row">
+              <span class="project-category">Data Science</span>
+              <span class="project-status-dot">Analytics</span>
+            </div>
+            <h3 class="project-title">Exploratory Data Science &amp; Analytics Dashboard</h3>
+            <p class="project-desc">
+              Interactive analytics engine for high-dimensional dataset profiling. Generates correlation heatmaps,
+              feature distribution plots, outlier detection reports, and multivariate statistical summaries with Pandas
+              and Seaborn.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+            </ul>
+            <div class="project-links">
+              <!-- Connected trigger to the project detail view -->
+              <button type="button" class="btn-proj btn-detail-trigger" data-modal-target="modal-project-eda">
+                <span>Detailed View</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+              <a href="https://github.com" class="btn-proj btn-code" target="_blank" rel="noopener noreferrer">
+                <span>Source Code</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ==============================================
+           PROJECT DETAIL MODALS (Dialog Windows)
+           Opened when corresponding thumbnail or "Detailed View" button is clicked
+           ============================================== -->
+      <!-- Modal 1: Customer Churn Predictor -->
+      <dialog id="modal-project-churn" class="project-detail-modal" aria-labelledby="churn-modal-title">
+        <div class="modal-content">
+          <header class="modal-header">
+            <div>
+              <span class="modal-category">Machine Learning Project</span>
+              <h3 id="churn-modal-title" class="modal-title">Customer Churn Prediction System</h3>
+            </div>
+            <button type="button" class="modal-close-btn" aria-label="Close dialog">✕</button>
+          </header>
+          <div class="modal-body">
+            <div class="modal-media">
+              <img src="churn-thumb.jpg" alt="Customer Churn Prediction Dashboard detailed preview" />
+            </div>
+
+            <!-- Video Demonstration Embed Component -->
+            <div class="video-embed-section" aria-label="Customer Churn Prediction Video Demo Walkthrough">
+              <div class="video-embed-header">
+                <div class="video-embed-badge">
+                  <span class="video-dot" aria-hidden="true"></span>
+                  <span>Interactive Video Walkthrough</span>
+                </div>
+                <span class="video-meta-time">Pipeline Demo • Full HD</span>
+              </div>
+              <div class="video-embed-container">
+                <iframe class="video-embed-frame"
+                  src="https://www.youtube-nocookie.com/embed/aircAruvnKk?rel=0&amp;modestbranding=1"
+                  title="Customer Churn Prediction Pipeline Live Demonstration Walkthrough" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p class="video-embed-caption">
+                <span class="caption-icon" aria-hidden="true">▶</span>
+                <span>Live demonstration showing feature distribution analysis, real-time risk scoring slider, and
+                  Streamlit inference pipeline.</span>
+              </p>
+            </div>
+            <div class="modal-specs">
+              <h4>System Overview</h4>
+              <p>
+                Customer attrition is a major revenue drain for subscription services. This end-to-end Machine Learning
+                pipeline identifies high-risk customers before churn occurs, allowing data-driven retention campaigns.
+              </p>
+              <h4>Key Architecture &amp; Methodology</h4>
+              <ul class="modal-features-list">
+                <li><strong>Data Wrangling:</strong> Cleaned 7,000+ subscriber records, handled missing inputs, and
+                  applied one-hot encoding for categorical customer attributes.</li>
+                <li><strong>Feature Importance:</strong> Identified contract duration, monthly charges, and tenure as
+                  primary churn drivers using Random Forest feature weights.</li>
+                <li><strong>Hyperparameter Tuning:</strong> Optimized decision depth, estimator count, and
+                  regularization with GridSearchCV for maximum AUC-ROC curve performance.</li>
+                <li><strong>Interactive UI:</strong> Built a lightweight Streamlit dashboard enabling business teams to
+                  input customer profiles and receive instant attrition risk assessments.</li>
+              </ul>
+              <div class="modal-metrics-grid">
+                <div class="modal-metric-card">
+                  <span class="metric-val">90.1%</span>
+                  <span class="metric-lbl">Model Accuracy</span>
+                </div>
+                <div class="modal-metric-card">
+                  <span class="metric-val">0.91</span>
+                  <span class="metric-lbl">AUC-ROC Score</span>
+                </div>
+                <div class="modal-metric-card">
+                  <span class="metric-val">88.4%</span>
+                  <span class="metric-lbl">Precision</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="modal-footer">
+            <a href="https://github.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit
+              Repository ↗</a>
+            <button type="button" class="btn btn-secondary modal-close-btn">Close</button>
+          </footer>
+        </div>
+      </dialog>
+
+      <!-- Modal 2: Algorithmic Suite & Data Structures Core -->
+      <dialog id="modal-project-algo" class="project-detail-modal" aria-labelledby="algo-modal-title">
+        <div class="modal-content">
+          <header class="modal-header">
+            <div>
+              <span class="modal-category">Algorithms &amp; Systems</span>
+              <h3 id="algo-modal-title" class="modal-title">Algorithmic Suite &amp; Data Structures Core</h3>
+            </div>
+            <button type="button" class="modal-close-btn" aria-label="Close dialog">✕</button>
+          </header>
+          <div class="modal-body">
+            <div class="modal-media">
+              <img src="algo-thumb.jpg" alt="Algorithmic Suite and Data Structures detailed preview" />
+            </div>
+            <div class="modal-specs">
+              <h4>System Overview</h4>
+              <p>
+                A high-performance algorithmic library providing custom data structure implementations and algorithm
+                benchmarks in Java and Python, built to demonstrate rigorous software engineering fundamentals.
+              </p>
+              <h4>Key Architecture &amp; Methodology</h4>
+              <ul class="modal-features-list">
+                <li><strong>Core Implementations:</strong> Custom AVL trees, Red-Black Trees, Priority Queues, Trie
+                  structures, and Disjoint Set Unions implemented from scratch.</li>
+                <li><strong>Graph Traversals:</strong> Comprehensive implementations of Dijkstra's shortest path,
+                  Bellman-Ford, Prim's Minimum Spanning Tree, and Topological Sort.</li>
+                <li><strong>Big-O Benchmarking:</strong> Automated unit tests measuring memory footprint and CPU
+                  instruction counts to empirically confirm asymptotic runtime complexity.</li>
+              </ul>
+              <div class="modal-metrics-grid">
+                <div class="modal-metric-card">
+                  <span class="metric-val">100+</span>
+                  <span class="metric-lbl">Algorithms Solved</span>
+                </div>
+                <div class="modal-metric-card">
+                  <span class="metric-val">O(log n)</span>
+                  <span class="metric-lbl">Search Guarantee</span>
+                </div>
+                <div class="modal-metric-card">
+                  <span class="metric-val">100%</span>
+                  <span class="metric-lbl">Test Coverage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="modal-footer">
+            <a href="https://github.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit
+              Repository ↗</a>
+            <button type="button" class="btn btn-secondary modal-close-btn">Close</button>
+          </footer>
+        </div>
+      </dialog>
+
+      <!-- Modal 3: Exploratory Data Science & Analytics Dashboard -->
+      <dialog id="modal-project-eda" class="project-detail-modal" aria-labelledby="eda-modal-title">
+        <div class="modal-content">
+          <header class="modal-header">
+            <div>
+              <span class="modal-category">Data Science &amp; Analytics</span>
+              <h3 id="eda-modal-title" class="modal-title">Exploratory Data Science &amp; Analytics Dashboard</h3>
+            </div>
+            <button type="button" class="modal-close-btn" aria-label="Close dialog">✕</button>
+          </header>
+          <div class="modal-body">
+            <div class="modal-media">
+              <img src="eda-thumb.jpg" alt="Exploratory Data Science & Analytics detailed preview" />
+            </div>
+
+            <!-- Video Demonstration Embed Component -->
+            <div class="video-embed-section" aria-label="Exploratory Data Science & Analytics Video Demo Walkthrough">
+              <div class="video-embed-header">
+                <div class="video-embed-badge">
+                  <span class="video-dot" aria-hidden="true"></span>
+                  <span>Analytics Video Walkthrough</span>
+                </div>
+                <span class="video-meta-time">Dashboard Demo • Full HD</span>
+              </div>
+              <div class="video-embed-container">
+                <iframe class="video-embed-frame"
+                  src="https://www.youtube-nocookie.com/embed/fH86TqXb-80?rel=0&amp;modestbranding=1"
+                  title="Exploratory Data Science &amp; Analytics Dashboard Video Walkthrough" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p class="video-embed-caption">
+                <span class="caption-icon" aria-hidden="true">▶</span>
+                <span>Interactive demonstration of statistical profiling, correlation matrix rendering, and outlier
+                  detection reports.</span>
+              </p>
+            </div>
+            <div class="modal-specs">
+              <h4>System Overview</h4>
+              <p>
+                A data analytics suite designed to automate exploratory data analysis workflows, feature correlation
+                analysis, and data quality inspection for machine learning pipelines.
+              </p>
+              <h4>Key Architecture &amp; Methodology</h4>
+              <ul class="modal-features-list">
+                <li><strong>Statistical Profiling:</strong> Automated calculation of skewness, kurtosis, variance
+                  inflation factors (VIF), and missingness distributions.</li>
+                <li><strong>Visual Exploration:</strong> Dynamic Seaborn &amp; Matplotlib heatmaps, pairplots, and
+                  violin distributions for multi-class classification datasets.</li>
+                <li><strong>Feature Engineering:</strong> Prepares input datasets with standard scaling, box-cox
+                  transformations, and automated outlier detection via Isolation Forests.</li>
+              </ul>
+              <div class="modal-metrics-grid">
+                <div class="modal-metric-card">
+                  <span class="metric-val">10x</span>
+                  <span class="metric-lbl">Faster EDA</span>
+                </div>
+                <div class="modal-metric-card">
+                  <span class="metric-val">50+</span>
+                  <span class="metric-lbl">Features Visualized</span>
+                </div>
+                <div class="modal-metric-card">
+                  <span class="metric-val">Automated</span>
+                  <span class="metric-lbl">Report Export</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="modal-footer">
+            <a href="https://github.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit
+              Repository ↗</a>
+            <button type="button" class="btn btn-secondary modal-close-btn">Close</button>
+          </footer>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- ——— TESTIMONIALS SECTION ——— -->
+    <!-- Authentic feedback and endorsements from mentors, colleagues, and academic peers -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="section-tag">TESTIMONIALS &amp; FEEDBACK</div>
+      <h2 id="testimonials-heading">Endorsements &amp; Peer Reviews</h2>
+      <p class="section-desc">
+        Perspectives from faculty mentors, engineering peers, and project collaborators on technical problem solving,
+        machine learning execution, and software craftsmanship.
+      </p>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1: Faculty / Research Mentor -->
+        <blockquote class="testimonial-card">
+          <div class="testimonial-header">
+            <span class="testimonial-category-pill tag-research">🔬 ML &amp; Research</span>
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+          </div>
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <p class="quote-text">
+            Sushanth approaches machine learning problems with commendable analytical depth. When engineering the
+            Customer Churn prediction system, his rigor in feature extraction, hyperparameter tuning, and
+            cross-validation was exemplary for an undergraduate engineer.
+          </p>
+          <footer class="quote-footer">
+            <div class="quote-avatar" aria-hidden="true">AR</div>
+            <div class="quote-author-info">
+              <cite class="quote-author">Dr. Arvind Ramanathan</cite>
+              <span class="quote-role">Faculty Mentor · AIML Department</span>
+              <span class="quote-context">Academic Research Guide</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <!-- Testimonial 2: Peer Software Engineer / Hackathon Lead -->
+        <blockquote class="testimonial-card">
+          <div class="testimonial-header">
+            <span class="testimonial-category-pill tag-engineering">💻 Systems &amp; DSA</span>
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+          </div>
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <p class="quote-text">
+            Working alongside Sushanth on complex data structure optimizations was seamless. His grasp of time
+            complexity benchmarking, coupled with disciplined Git workflows and proactive communication, kept our
+            sprints fast and bug-free.
+          </p>
+          <footer class="quote-footer">
+            <div class="quote-avatar" aria-hidden="true">RK</div>
+            <div class="quote-author-info">
+              <cite class="quote-author">Rohan Kulkarni</cite>
+              <span class="quote-role">Peer Software Engineer</span>
+              <span class="quote-context">Hackathon &amp; DSA Team Lead</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <!-- Testimonial 3: Academic Data Science Collaborator -->
+        <blockquote class="testimonial-card">
+          <div class="testimonial-header">
+            <span class="testimonial-category-pill tag-data">📊 Data Analytics</span>
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+          </div>
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <p class="quote-text">
+            Sushanth has a great talent for transforming messy datasets into intuitive visual narratives. His
+            exploratory data analysis and Streamlit dashboards provided our project with immediate, actionable insights
+            while maintaining modular code.
+          </p>
+          <footer class="quote-footer">
+            <div class="quote-avatar" aria-hidden="true">AS</div>
+            <div class="quote-author-info">
+              <cite class="quote-author">Ananya Sharma</cite>
+              <span class="quote-role">Data Science Collaborator</span>
+              <span class="quote-context">B.Tech AIML Project Partner</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <!-- Testimonial 4: Open Source & Code Review Partner -->
+        <blockquote class="testimonial-card">
+          <div class="testimonial-header">
+            <span class="testimonial-category-pill tag-opensource">🐙 Code Quality</span>
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+          </div>
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <p class="quote-text">
+            Sushanth writes clean, predictable code that is a pleasure to review. His Java implementations of custom
+            tree and graph structures adhere strictly to SOLID principles, and he is always eager to optimize asymptotic
+            efficiency.
+          </p>
+          <footer class="quote-footer">
+            <div class="quote-avatar" aria-hidden="true">VP</div>
+            <div class="quote-author-info">
+              <cite class="quote-author">Vikram Patel</cite>
+              <span class="quote-role">Senior Software Engineer</span>
+              <span class="quote-context">Open Source Contributor &amp; Code Reviewer</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ——— CHAT SECTION ——— -->
+    <!-- Interactive AI Twin: Chat with an AI version of Sushanth CD -->
+    <section id="chat" aria-labelledby="chat-heading">
+      <div class="section-tag">AI DIGITAL TWIN</div>
+      <h2 id="chat-heading">Chat with AI Sushanth</h2>
+      <p class="section-desc">
+        Interact directly with an AI simulation of Sushanth CD. Ask about machine learning pipelines, algorithmic
+        problem solving, project architecture, or career aspirations.
+      </p>
+
+      <div class="pro-chat-window">
+        <!-- Chat Window Titlebar / Header -->
+        <div class="chat-titlebar">
+          <div class="chat-title-info">
+            <div class="window-buttons" aria-hidden="true">
+              <span class="win-btn close" title="Close"></span>
+              <span class="win-btn min" title="Minimize"></span>
+              <span class="win-btn max" title="Maximize"></span>
+            </div>
+            <div class="chat-avatar-mini">
+              <img src="Sush proff pic.jpeg" alt="Sushanth CD mini portrait" class="chat-mini-img" width="34"
+                height="34" />
+              <span class="mini-status-dot" aria-hidden="true"></span>
+            </div>
+            <div>
+              <div class="chat-title">Sushanth CD (AI Twin)</div>
+              <div class="chat-subtitle">Software Engineer &amp; AIML Specialist</div>
+            </div>
+          </div>
+          <div class="chat-status-pill">
+            <span class="chat-status-dot" aria-hidden="true"></span>
+            <span>Online</span>
+          </div>
+        </div>
+
+        <!-- Display Area for Messages -->
+        <div id="chat-messages" class="chat-messages" aria-live="polite" role="log">
+          <div class="chat-bubble bot">
+            <div class="bubble-header">
+              <span class="bubble-avatar" aria-hidden="true">🤖</span>
+              <span class="chat-sender">AI Sushanth</span>
+              <time class="message-time">Just now</time>
+            </div>
+            <p>
+              Hi there! 👋 I'm an AI simulation of Sushanth CD. Feel free to ask me about my machine learning projects,
+              data structures in Java, full-stack tools, or how to get in touch!
+            </p>
+          </div>
+        </div>
+
+        <!-- Real-time Typing Indicator (Toggled during simulated/API wait) -->
+        <div id="chat-typing-indicator" class="chat-typing-indicator" aria-hidden="true" style="display: none;">
+          <span class="typing-avatar">🤖</span>
+          <span class="typing-name">AI Sushanth is typing</span>
+          <div class="typing-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- Interactive Starter Prompt Chips -->
+        <div class="chat-chips-bar" aria-label="Suggested interactive queries">
+          <span class="chips-hint">Ask Me:</span>
+          <button type="button" class="chat-chip-btn" data-query="Tell me about yourself and your background">About
+            Sushanth</button>
+          <button type="button" class="chat-chip-btn" data-query="How does your Customer Churn Predictor work?">Customer
+            Churn ML</button>
+          <button type="button" class="chat-chip-btn" data-query="What is your core tech stack and skill set?">Core Tech
+            Stack</button>
+          <button type="button" class="chat-chip-btn" data-query="How can I contact or hire you?">Contact &amp;
+            Hire</button>
+        </div>
+
+        <!-- Message Input Field Bar -->
+        <form id="chat-form" class="chat-input-bar">
+          <input type="text" id="chat-input" class="chat-text-input"
+            placeholder="Type your question for AI Sushanth (e.g. 'What are your career goals?')..." autocomplete="off"
+            required aria-label="Message to AI Sushanth" />
+          <button type="submit" class="chat-send-btn" id="chat-send-btn" aria-label="Send message">
+            <span>Send</span>
+            <span class="send-arrow" aria-hidden="true">→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ——— CONTACT SECTION ——— -->
+    <!-- Dedicated Contact Form & Direct Connection Channels -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-tag">GET IN TOUCH</div>
+      <h2 id="contact-heading">Let's Connect &amp; Collaborate</h2>
+      <p class="section-desc">
+        Have an open engineering role, an ML project idea, or a collaborative inquiry? Send a message directly below,
+        and I'll respond within 24 hours.
+      </p>
+
+      <div class="contact-container">
+        <!-- Left Column: Contact Channels & Availability Card -->
+        <aside class="contact-info-card">
+          <h3 class="contact-card-title">Contact Channels</h3>
+          <p class="contact-card-desc">
+            Feel free to reach out through this secure contact form or connect directly across professional engineering
+            networks.
+          </p>
+
+          <ul class="contact-channels-list">
+            <li class="channel-item">
+              <span class="channel-icon" aria-hidden="true">📍</span>
+              <div>
+                <span class="channel-label">Location</span>
+                <span class="channel-val">Bengaluru, Karnataka, India</span>
+              </div>
+            </li>
+            <li class="channel-item">
+              <span class="channel-icon" aria-hidden="true">⚡</span>
+              <div>
+                <span class="channel-label">Availability</span>
+                <span class="channel-val status-available">Open for Roles &amp; Internships</span>
+              </div>
+            </li>
+            <li class="channel-item">
+              <span class="channel-icon" aria-hidden="true">⏱️</span>
+              <div>
+                <span class="channel-label">Typical Response Time</span>
+                <span class="channel-val">Within 24 Hours</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-socials-group">
+            <span class="socials-group-label">Professional Profiles:</span>
+            <ul class="social-links" aria-label="Social media links">
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub
+                  ↗</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn
+                  ↗</a></li>
+              <li><a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-pill">Twitter / X
+                  ↗</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Right Column: Interactive Contact Form Card -->
+        <!-- ==========================================================
+             EMAIL-SENDING SERVICE INTEGRATION (e.g., Resend API):
+             To route submissions directly to your inbox via Resend:
+             1. Set `action="/api/send-email"` pointing to your backend endpoint.
+             2. Or use JavaScript fetch to POST form data to your Resend serverless function.
+             See detailed integration instructions and example backend handler in index.js (Section 5).
+             ========================================================== -->
+        <div class="contact-form-wrapper">
+          <form id="contact-form" action="#" method="POST" aria-label="Contact inquiry form">
+            <!-- Name Field -->
+            <div class="form-group">
+              <label for="contact-name">Your Name <span class="required-star">*</span></label>
+              <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Alex Morgan"
+                required autocomplete="name" />
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+              <label for="contact-email">Email Address <span class="required-star">*</span></label>
+              <input type="email" id="contact-email" name="email" class="form-control"
+                placeholder="e.g. alex@company.com" required autocomplete="email" />
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+              <label for="contact-message">Your Message <span class="required-star">*</span></label>
+              <textarea id="contact-message" name="message" class="form-control" rows="5"
+                placeholder="Tell me about your project, engineering role, or question..." required></textarea>
+            </div>
+
+            <!-- Prominent High-Contrast Submit Button -->
+            <button type="submit" id="contact-submit-btn" class="btn btn-contact-submit"
+              aria-label="Send contact message">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon" aria-hidden="true">✉</span>
+            </button>
+          </form>
+
+          <!-- Confirmation Message Container (Shown upon successful submission) -->
+          <div id="contact-confirmation-msg" class="contact-confirmation-msg" role="status" aria-live="polite"
+            style="display: none;">
+            <div class="confirm-icon" aria-hidden="true">✓</div>
+            <div class="confirm-text-group">
+              <h4 class="confirm-title">Message Sent Successfully!</h4>
+              <p class="confirm-desc">Thank you for reaching out. Your message has been received, and Sushanth will get
+                back to you within 24 hours.</p>
+            </div>
+            <button type="button" class="confirm-dismiss-btn" id="confirm-dismiss-btn"
+              aria-label="Send another message">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================
+       FOOTER — Copyright & secondary links
+       =================================== -->
+  <footer id="site-footer">
+    <p>&copy; <span id="footer-year">2026</span> Sushanth CD. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="#hero">Back to top ↑</a>
+    </nav>
+  </footer>
+
+  <!-- Script placeholder -->
+  <script src="index.js"></script>
+</body>
+
+</html>

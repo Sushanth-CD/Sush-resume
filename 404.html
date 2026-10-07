@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | Sushanth CD Portfolio</title>
+  <meta name="description" content="The requested page could not be found. Return to Sushanth CD's engineering portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    .not-found-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .not-found-card {
+      background: rgba(19, 26, 40, 0.85);
+      backdrop-filter: var(--header-blur);
+      -webkit-backdrop-filter: var(--header-blur);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      border-radius: var(--radius-xl);
+      padding: 3.5rem 2.8rem;
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(0, 229, 255, 0.16);
+      animation: modalScaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .error-code-badge {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      background: rgba(0, 229, 255, 0.1);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      border-radius: var(--radius-full);
+      padding: 0.35rem 1rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.08em;
+    }
+
+    .error-glitch-title {
+      font-family: var(--font-heading);
+      font-size: clamp(3rem, 8vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #ffffff 30%, var(--color-accent) 70%, var(--color-primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.75rem;
+    }
+
+    .error-heading {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .error-description {
+      color: var(--color-text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 2.2rem;
+    }
+
+    .error-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="not-found-wrapper">
+    <div class="not-found-card">
+      <span class="error-code-badge">HTTP 404 // ROUTE NOT FOUND</span>
+      <h1 class="error-glitch-title">404</h1>
+      <h2 class="error-heading">Page Not Found</h2>
+      <p class="error-description">
+        The destination you navigated to doesn't exist or has been relocated within the portfolio system. Return home to explore projects, technical skills, and research work.
+      </p>
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary">
+          <span>Return to Portfolio</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="index.html#contact" class="btn btn-secondary">
+          <span>Contact Sushanth</span>
+          <span aria-hidden="true">✉</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
